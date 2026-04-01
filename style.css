@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+  background: #0f0f0f;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0,255,200,0.08), transparent),
+    radial-gradient(circle at 75% 75%, rgba(255,0,200,0.08), transparent);
+
+  color: white;
+  perspective: 1200px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  text-shadow: 0 0 10px #00f5d4, 0 0 20px #ff00ff;
+}
+
+/* Controls */
+.controls input,
+.controls select {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  backdrop-filter: blur(5px);
+}
+
+/* Container */
+#postsContainer {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Blog Card */
+.post {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  will-change: transform;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Link */
+.post-link {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image */
+.post img {
+  width: 180px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  transform: translateZ(40px);
+}
+
+/* Content */
+.post-content {
+  transform: translateZ(30px);
+}
+
+.post-content p {
+  color: #ddd;
+}
+
+/* Description */
+.description {
+  font-size: 13px;
+  color: #bbb;
+}
+
+/* Category */
+.category {
+  color: #00f5d4;
+  font-size: 12px;
+}
